@@ -15,6 +15,14 @@ const db = mysql.createConnection({
   database: 'mydb', // replace with your database name
 });
 
+// // MySQL connection
+// const db = mysql.createConnection({
+//   host: process.env.DB_HOST || 'localhost',
+//   user: process.env.DB_USER || 'admin',
+//   password: process.env.DB_PASSWORD || 'yourpassword',
+//   database: process.env.DB_NAME || 'mydb',
+// });
+
 // Connect to MySQL
 db.connect((err) => {
   if (err) {
